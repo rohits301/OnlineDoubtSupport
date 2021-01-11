@@ -62,8 +62,8 @@ $(document).ready(function () {
 				$("#onlineUsersList").append($li);
 
 				editors[otherUser] = ace.edit(otherUser + "Editor");
-				editors[otherUser].setTheme("ace/theme/monokai");
-				editors[otherUser].getSession().setMode("ace/mode/javascript");
+				editors[otherUser].setTheme("ace/theme/cobalt");
+				editors[otherUser].getSession().setMode("ace/mode/java");
 				editors[otherUser].setReadOnly(true);
 				editors[otherUser].getSession().on('change', sendEditorMessage);
 				initCanvas($div, otherUser);
